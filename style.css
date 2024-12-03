@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Pangolin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Main Section Layout */
+main {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Align settings to the top of the grid */
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    color: #333;
+}
+
+/* Settings Panel Styling */
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    font-family: 'Pangolin', sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8d8d8d;
+}
+
+#size-slider {
+    width: 100%;
+}
+
+#size-value {
+    font-size: 1rem;
+}
+
+/* Style for the slider */
+#size-slider {
+    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+    width: 100%;
+    height: 8px;
+    background: #ffffff; /* Main slider track color */
+    border-radius: 5px;
+    border: 2px solid black; 
+    outline: none; /* Removes focus outline */
+    transition: background 0.3s ease;
+}
+
+/* Style for the slider thumb (the draggable part) */
+#size-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #333232; /* Color of the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 2px solid #333232; /* Optional: adds a white border for better visibility */
+}
+
+#size-slider::-webkit-slider-thumb:hover {
+    background: #000000; /* Darker color on hover */
+}
+
+/* For non-WebKit browsers (e.g., Firefox) */
+#size-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #8d8d8d;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.3s ease;
+}
+
+#size-slider::-moz-range-thumb:hover {
+    background: #8d8d8d;
+}
+
+/* For the track styling in Firefox */
+#size-slider::-moz-range-track {
+    background: #8d8d8d;
+    height: 8px;
+    border-radius: 5px;
+}   
+
+/* Grid Container Styling */
+.grid {
+    display: grid;
+    flex-wrap: wrap;
+    width: 480px; /* Smaller total width for the grid */
+    height: 480px; /* Smaller total height for the grid */
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.grid-element {
+    user-select: none;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+    
